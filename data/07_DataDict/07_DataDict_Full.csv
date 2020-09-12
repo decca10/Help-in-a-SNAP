@@ -1,0 +1,167 @@
+VARIABLE              ORIGIN*      DESCRIPTION                       Quick-Reference Codebook,
+Unit QC Review Administrative Data,
+ACTNTYPE                  R       Type of action,ACTNTYPE
+ALLADJ                    R       Allotment adjustment,ALLADJ
+AMTADJ                    R       Amount of allotment adjustment,AMTADJ
+AUTHREP                   R       Authorized representative,AUTHREP
+CASE                      R       Case classification,CASE
+CAT_ELIG                  C       Indicator of categorical eligibility status,CAT_ELIG
+CERTMTH                   R       Months in certification period,CERTMTH
+COUPFIX                   C       Coupon allotment adjusted for errors,COUPFIX
+EXPEDSER                  R       Received expedited service,EXPEDSER
+HHLDNO                    C       Household identification number,HHLDNO
+LASTCERT                  C       Months since last certification for FSP,LASTCERT
+LOCALCOD                  R       Local agency code,LOCALCOD
+MED_DED_DEMO              C       Indicator of Medical Deduction Demonstration participation,MED_DED_DEMO
+MN_FIP                    C       Indicator of MFIP participation,MN_FIP
+PURE_PA                   C       Indicator of Pure PA status,PURE_PA
+RCNTACTN                  R       Most recent action on case,RCNTACTN
+REP_SYS                   R       Reporting system,REP_SYS
+REVNUM                    R       State QC review number,REVNUM
+SSI_CAP                   C       Indicator of SSI-CAP participation,SSI_CAP
+STATUS                    R       Status of case error findings,STATUS
+YRMONTH                   R       Sample year and month,YRMONTH
+Unit Demographics and Sample Weights,
+CERTHHSZ                  R       Certified unit size,CERTHHSZ
+COUNTYCD                  C       FIPS code for county,COUNTYCD
+CTPRHH                    C       Number of people in household,CTPRHH
+FSDIS                     C       Indicator of presence of disabled person in unit,FSDIS
+FSNELDER                  C       Number of elderly individuals in unit,FSNELDER
+FSNGMOM                   C       Indicator of single-female headed unit,FSNGMOM
+FSNK0T4                   C       Number of preschool-age children in unit,FSNK0T4
+FSNK5T17                  C       Number of school-age children in unit,FSNK5T17
+FSNKID                    C       Number of children in unit,FSNKID
+FSNONCIT                  C       Number of noncitizens in unit,FSNONCIT
+FSUSIZE                   C       Constructed certified unit size,FSUSIZE
+FYWGT                     C       Weight used for full-year calculations,FYWGT
+HWGT                      C       Monthly sample weight,HWGT
+RAWHSIZE                  R       Reported number of people in household,RAWHSIZE
+REGION                    C       Constructed census region code,REGION
+REGIONCD                  R       FNS region code,REGIONCD
+STATE                     R       FIPS code for State or territory,STATE
+STRATUM                   R       Stratum identification,STRATUM
+TANF_IND                  C       Indicator of TANF receipt for household,TANF_IND
+TPOV                    C   Gross income/poverty level ratio,TPOV
+URBRUR                  C   Urban/rural indicator,URBRUR
+WRK_POOR                C   Indicator of working poor household,WRK_POOR
+Unit Countable Income (Monthly Dollar Amounts),
+FSCONT                  C   Countable unit income from contributions,FSCONT
+FSCSUPRT                C   Countable unit child support payment income,FSCSUPRT
+FSDEEM                  C   Countable unit deemed income,FSDEEM
+FSDIVER                 C   Countable unit State diversion payments,FSDIVER
+FSEARN                  C   Countable unit earned income,FSEARN
+FSEDLOAN                C   Countable unit income from educational grants and loans,FSEDLOAN
+FSEITC                  C   Countable unit income from earned income tax credit,FSEITC
+FSENERGY                C   Countable unit energy assistance income,FSENERGY
+FSGA                    C   Countable unit general assistance benefits,FSGA
+FSGRINC                 C   Final gross countable unit income,FSGRINC
+FSNETINC                C   Final net countable unit income,FSNETINC
+FSOTHERN                C   Countable unit other earned income,FSOTHERN
+FSOTHGOV                C   Countable unit income from other government benefits,FSOTHGOV
+FSOTHUN                 C   Countable unit other unearned income,FSOTHUN
+FSSLFEMP                C   Countable unit self-employment income,FSSLFEMP
+FSSOCSEC                C   Countable unit social security income,FSSOCSEC
+FSSSI                   C   Countable unit SSI benefits,FSSSI
+FSTANF                  C   Countable unit TANF payments,FSTANF
+FSUNEARN                C   Countable unit unearned income,FSUNEARN
+FSUNEMP                 C   Countable unit unemployment compensation benefits,FSUNEMP
+FSVET                   C   Countable unit veterans' benefits,FSVET
+FSWAGES                 C   Countable unit wages and salaries,FSWAGES
+FSWCOMP                 C   Countable unit workers' compensation benefits,FSWCOMP
+FSWGESUP                C   Countable unit wage supplementation income,FSWGESUP
+RAWGROSS                R   Reported gross countable unit income,RAWGROSS
+RAWNET                  R   Reported net countable unit income,RAWNET
+Unit Countable Assets,
+FSASSET                 C   Total countable assets,FSASSET
+FSVEHAST                R   Reported non-excluded vehicles value,FSVEHAST
+LIQRESOR                R   Reported liquid assets,LIQRESOR
+OTHNLRES                R   Reported other nonliquid assets,OTHNLRES
+REALPROP                R   Reported real property,REALPROP
+VEHICLEA                R   Reported category for first vehicle,VEHICLEA
+VEHICLEB                R   Reported category for second vehicle,VEHICLEB
+Unit Expenses and Deductions,
+ERN_INC_DED_PCT       C        Percentage used to calculate earnings deduction,ERN_INC_DED_PCT
+EXCL_FSCSDED          C        Child support excluded from gross income,EXCL_FSCSDED
+FSCSDED               C        Child support expense deduction,FSCSDED
+FSCSEXP               R        Reported child support expense deduction,FSCSEXP
+FSDEPDED              R        Reported dependent care deduction,FSDEPDED
+FSDEPDE2              C        Marginal effectiveness of dependent care deduction,FSDEPDE2
+FSERNDED              C        Calculated earned income deduction,FSERNDED
+FSERNDE2              C        Marginal effectiveness of earned income deduction,FSERNDE2
+FSMEDDED              C        Calculated medical deduction,FSMEDDED
+FSMEDDE2              C        Marginal effectiveness of medical deduction,FSMEDDE2
+FSMEDEXP              R        Reported medical expenses,FSMEDEXP
+FSSLTDED              C        Calculated excess shelter deduction,FSSLTDED
+FSSLTDE2              C        Marginal effectiveness of excess shelter deduction,FSSLTDE2
+FSSLTEXP              C        Calculated shelter expenses,FSSLTEXP
+FSSTDDED              C        Standard deduction,FSSTDDED
+FSSTDDE2              C        Marginal effectiveness of standard deduction,FSSTDDE2
+FSTOTDED              C        Total deductions,FSTOTDED
+FSTOTDE2              C        Marginal effectiveness of total deduction,FSTOTDE2
+HOMEDED               R        Indicator of homelessness,HOMEDED
+HOMELESS_DED          C        Amount of homeless deduction,HOMELESS_DED
+RAWERND               R        Reported earned income deduction,RAWERND
+RENT                  R        Rent/mortgage amount,RENT
+SHELCAP               C        Maximum allowable shelter expense deduction,SHELCAP
+SHELDED               R        Reported shelter deduction,SHELDED
+SUA1                  R        Standard utility allowance – usage and entitlement,SUA1
+SUA2                  R        Standard utility allowance – prorated,SUA2
+UTIL                  R        Utility amount,UTIL
+Unit Benefits,
+AMTERR                R        Amount of benefit allotment in error,AMTERR
+ASSLIM                C        Asset limit,ASSLIM
+BENMAX                C        Maximum benefit amount,BENMAX
+FSASTEST              C        Indicator of passing asset test,FSASTEST
+FSBEN                 C        Final calculated benefit,FSBEN
+FSGRTEST              C        Indicator of passing gross income test,FSGRTEST
+FSMINBEN              C        Received minimum benefit,FSMINBEN
+FSNETEST              C        Indicator of passing net income test,FSNETEST
+GROSSCRN              C        Gross income screen,GROSSCRN
+NETSCRN               C        Net income screen,NETSCRN
+RAWBEN                R        Reported FSP benefit received,RAWBEN
+Person-Level Characteristics: i = 1 to 16,
+ABWDSTi                  R      ABAWD status,ABWDSTi
+AGEi                     R      Age,AGEi
+CTZNi                    R      Citizenship status,CTZNi
+DPCOSTi                  R      Reported dependent care cost,DPCOSTi
+EMPRGi                   R      FSP Employment and training program status,EMPRGi
+EMPSTAi                  R      Employment status – type,EMPSTAi
+EMPSTBi                  R      Employment status – amount,EMPSTBi
+FSAFILi                  R      Food stamp case affiliation,FSAFILi
+FSUNi                    C      Position of head of FSP unit,FSUNi
+RACETHi                  R      Race/ethnicity,RACETHi
+RELi                     R      Relationship to head of household,RELi
+SEXi                     R      Sex,SEXi
+WRKREGi                  R      Work registration status,WRKREGi
+YRSEDi                   R      Highest educational level completed,YRSEDi
+Person-Level Countable Income (Monthly Dollar Amounts): i = 1 to 16,
+CONTi                    R      Countable income from contributions,CONTi
+CSUPRTi                  R      Countable child support payment income,CSUPRTi
+DEEMi                    R      Countable deemed income,DEEMi
+DIVERi                   R      Countable State diversion payments,DIVERi
+EDLOANi                  R      Countable income from educational grants and loans,EDLOANi
+EITCi                    R      Countable earned income tax credit payments,EITCi
+ENERGYi                  R      Countable energy assistance income,ENERGYi
+GAi                      R      Countable general assistance benefits,GAi
+OTHERNi                  R      Countable other earned income,OTHERNi
+OTHGOVi                  R      Countable income from other government benefits,OTHGOVi
+OTHUNi                   R      Countable other unearned income,OTHUNi
+SLFEMPi                  R      Countable self-employment income,SLFEMPi
+SOCSECi                  R      Countable social security income,SOCSECi
+SSIi                     R      Countable SSI benefits,SSIi
+TANFi                    R      Countable TANF payments,TANFi
+UNEMPi                   R      Countable unemployment compensation benefits,UNEMPi
+VETi                     R      Countable veterans' benefits,VETi
+WAGESi                   R      Countable wages and salaries,WAGESi
+WCOMPi                   R      Countable workers' compensation benefits,WCOMPi
+WGESUPi                  R      Countable wage supplementation income,WGESUPi
+Detailed Error Findings: i = 1 to 9,
+AGENCYi                  R      Agency or client responsibility,AGENCYi
+AMOUNTi                  R      Variance dollar amount,AMOUNTi
+DISCOVi                  R      Variance discovery,DISCOVi
+E_FINDGi                 R      Error finding,E_FINDGi
+ELEMENTi                 R      Variance element,ELEMENTi
+NATUREi                  R      Nature of variance,NATUREi
+OCCDATEi                 R      Variance occurrence date,OCCDATEi
+TIMEPERi                 R      Variance time period,TIMEPERi
+VERIFi                   R      Variance verification,VERIFi
