@@ -16,7 +16,9 @@ I started with almost 800 features. After addressing nulls and correlation analy
 My intention was to use an interpretable model so I could see the coefficients that are influencing prediction of SNAP receipients.  After testing several models, I landed on a Vote Ensemble with Random Forest, Gradient Boost and Bagging Classifiers.  
 
 # Acquiring the data
-The data was acquired through the USDA and is part of their [SNAP Quality Control Datasets](https://www.fns.usda.gov/resource/snap-quality-control-data).
+- The SNAP data was acquired through the USDA and is part of their [SNAP Quality Control Datasets](https://www.fns.usda.gov/resource/snap-quality-control-data). 
+- The state shapefiles were acquired through the [US Census Bureau Boundary Shapefiles](https://www.census.gov/geographies/mapping-files/time-series/geo/carto-boundary-file.html)
+
 Data dictionaries can be found in the reports folder for [2007](http://localhost:8888/lab/tree/reports/07_DataDict.pdf) and [2017](http://localhost:8888/lab/tree/reports/17_DataDict.pdf) datasets.  A note on government data, though it was processed by the same company "Mathmatica", I ran into data conversion issues.  For example, I used an online converter to turn the 07_DataDict.pdf into a CSV file, which ran great.  But, when I tried the same method on the 17DataDict.pdf there were different formatting issues (ie. unusual spaces) that caused the conversion to fail.
 
 # The process
