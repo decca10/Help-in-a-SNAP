@@ -84,8 +84,8 @@ def plot_simple_features(column,img_name,description):
         for key,value in {'nm07':nm07_orig,'nm17':nm17_orig,'ne07':ne07_orig,'ne17':ne17_orig}.items():
             mean = value[column].mean()
             ax = plt.subplot(idx)
-            plt.title(f'$\textit{key.upper()}$')
-            sns.countplot(x=value[column],palette="husl")  # Explicitly specify 'x' parameter
+            plt.title(f'$\t{key.upper()}$')
+            sns.countplot(x=value[column],palette="husl",hue=column, data=value, legend=False) 
             ax.axhline(mean,linewidth=1,color='r')
             ax.set_xlabel('')
             #ax.set_xticklabels([0,1])
@@ -101,10 +101,11 @@ def plot_features(column,img_name,description):
     while idx<225:
         for key,value in {'nm07':nm07,'nm17':nm17,'ne07':ne07,'ne17':ne17}.items():
             ax = plt.subplot(idx)
-            plt.title(f'$\it{key.upper()}$')
-            sns.countplot(value[column])
+            plt.title(f'$\t{{{key.upper()}}}$')
+            sns.countplot(x=value[column], hue=column, data=value, legend=False)
             ax.axhline(y=value[value[column]==1][column].size,linewidth=1,color='r')
             ax.set_xlabel('')
+            ax.set_xticks([0, 1])  # Set x-ticks before setting x-tick labels
             ax.set_xticklabels([0,1])
             idx +=1
     plt.savefig("./images/ind_features/" + str(img_name) + ".png")
@@ -117,7 +118,7 @@ def plot_features_hist(column,img_name,description):
     while idx<225:
         for key,value in {'nm07':nm07,'nm17':nm17,'ne07':ne07,'ne17':ne17}.items():
             ax = plt.subplot(idx)
-            plt.title(f'$\it{key.upper()}$')
+            plt.title(f'$\t{{{key.upper()}}}$')  # Corrected here
             plt.hist(value[column],bins=20,range=(1,value[column].max()))
             ax.set_xlabel(f"Number of zero's:{value[value[column]==0][column].count()}")
             ax.xaxis.set_label_coords(0.15, 1.05)
