@@ -32,8 +32,3 @@ unit17_inc=pd.read_csv('./data/17_DataDict/UNIT_Inc.csv')
 per17_char=pd.read_csv('./data/17_DataDict/PERS_Char.csv')
 per17_inc=pd.read_csv('./data/17_DataDict/PERS_Inc.csv')
 
-################################
-    #Correlated Features
-################################
-
-corr_features = pd.read_csv("./data/corr_features.csv")
