@@ -85,7 +85,7 @@ def plot_simple_features(column,img_name,description):
             mean = value[column].mean()
             ax = plt.subplot(idx)
             plt.title(f'$\t{key.upper()}$')
-            sns.countplot(x=value[column],palette="husl",hue=column, data=value, legend=False) 
+            sns.countplot(x=value[column],palette="husl",hue=column, data=value) 
             ax.axhline(mean,linewidth=1,color='r')
             ax.set_xlabel('')
             #ax.set_xticklabels([0,1])
