@@ -11,7 +11,6 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn.impute import SimpleImputer
-import python_code.Reference as ref
 
 
 #New Mexico
@@ -29,6 +28,8 @@ nm17 = pd.read_csv('./data/nm17.csv')
 #Nebraska
 ne07 = pd.read_csv('./data/clean_ne07.csv')
 ne17 = pd.read_csv('./data/clean_ne17.csv')
+
+corr_features = pd.read_csv('./data/corr_features.csv')
 ################
     #EDA
 ################
@@ -144,7 +145,7 @@ def clean_data_to_predict(dataset):
     """Cleans new datasets for processing through prediction"""
     fullname_df = pd.DataFrame()
     fullname_df['state']=dataset['STATENAME']
-    for feature in ref.corr_features['Table 1']:
+    for feature in corr_features['Table 1']:
         try:
             fullname_df[feature] = dataset[feature].astype('float64')
         except:
