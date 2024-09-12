@@ -103,7 +103,7 @@ def plot_features(column,img_name,description):
         for key,value in {'nm07':nm07,'nm17':nm17,'ne07':ne07,'ne17':ne17}.items():
             ax = plt.subplot(idx)
             plt.title(f'$\t{{{key.upper()}}}$')
-            sns.countplot(x=value[column], hue=column, data=value, legend=False)
+            sns.countplot(x=value[column], hue=column, data=value)
             ax.axhline(y=value[value[column]==1][column].size,linewidth=1,color='r')
             ax.set_xlabel('')
             ax.set_xticks([0, 1])  # Set x-ticks before setting x-tick labels
